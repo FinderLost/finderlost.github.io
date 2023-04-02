@@ -1,0 +1,94 @@
+/* General styles */
+body {
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #34495E;
+    background-color: #f5f5f5;
+}
+
+
+.navbar {
+    z-index: 100;
+}
+
+/* Primary Color (Turquoise) */
+.primary {
+    color: #1ABC9C;
+}
+
+.primary-bg {
+    background-color: #1ABC9C;
+}
+
+.primary-border {
+    border-color: #1ABC9C;
+}
+
+/* Secondary Color (Charcoal Grey) */
+.secondary {
+    color: #34495E;
+}
+
+.secondary-bg {
+    background-color: #34495E;
+}
+
+.secondary-border {
+    border-color: #34495E;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1ABC9C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #148f77;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #34495E;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495E;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: #1ABC9C;
+}
+
+/* Footer */
+footer {
+    background-color: #34495E;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a {
+    color: #1ABC9C;
+}
+
+footer a:hover {
+    color: #148f77;
+}
