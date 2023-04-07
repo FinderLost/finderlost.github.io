@@ -1,0 +1,80 @@
+@import "bootstrap/dist/css/bootstrap";
+@import "./color-palette.css";
+
+body {
+  background-color: var(--background);
+}
+
+p {
+  color: var(--text-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-prominent);
+}
+
+a {
+  color: inherit;
+  color: var(--text-base);
+  text-decoration: none;
+}
+
+a:focus {
+  color: var(--text-focused);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-hover);
+  text-decoration: none;
+}
+
+.text-prominent {
+  color: var(--text-prominent);
+}
+
+.text-inverse {
+  color: var(--text-inverse);
+}
+
+.text-base {
+  color: var(--text-base);
+}
+
+.text-hover {
+  color: var(--text-hover);
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-light {
+  background-color: var(--stroke-variant);
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar-light {
+  background-color: var(--stroke-variant);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-base);
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--text-focused);
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--text-hover);
+  text-decoration: none;
+}
