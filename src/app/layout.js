@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
