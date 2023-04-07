@@ -1,24 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./Navbar.module.css";
-import logo from "../../../public/images/logo.svg";
+import logo from "../../public/images/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav
-      className={`navbar navbar-expand-lg navbar-light bg-light ${styles.navbar}`}
-    >
-      <div className="container">
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="Logo"
-            width={40}
-            height={40}
-            className="d-inline-block align-top"
-          />
-        </Link>
-        <div className="navbar-nav">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div className="container d-flex align-items-center">
+        <div className="d-flex align-items-center">
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Logo"
+              width={40}
+              height={40}
+              className="d-inline-block align-top"
+            />
+          </Link>
+          <span className="ml-2">Finder Lost</span>
+        </div>
+        <div className="navbar-nav mx-auto">
           <Link href="#home">
             <span className="nav-link">Home</span>
           </Link>

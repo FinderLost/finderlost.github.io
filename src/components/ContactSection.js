@@ -1,5 +1,3 @@
-import styles from "./ContactSection.module.css";
-
 const ContactSection = () => {
   return (
     <section id="contact" className="container mt-5">
@@ -29,7 +27,7 @@ const ContactSection = () => {
           <h4>Follow Us</h4>
           <div className="row">
             <div className="col-md-12 mb-4">
-              <ul className={`list-inline text-left ${styles.socialIcons}`}>
+              <ul className={`list-inline text-left`}>
                 <li className="list-inline-item">
                   <a
                     href="#"
