@@ -104,6 +104,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
@@ -139,6 +165,7 @@ self.__RSC_MANIFEST={
     ],
     "/Users/felipe/develop/website/src/app/page": [
       "static/css/_app-client_src_app_page_module_css.css",
+      "static/css/_app-client_src_components_HomeSection_HomeSection_module_css.css",
       "static/css/_app-client_src_components_Navbar_Navbar_module_css.css",
       "static/css/_app-client_node_modules_next_font_google_target_css_path_src_app_page_js_import_Inter_argume-baa61f.css"
     ]
@@ -335,6 +362,54 @@ self.__RSC_MANIFEST={
     "name": "default",
     "async": false
   },
+  "/Users/felipe/develop/website/node_modules/next/dist/client/image.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/felipe/develop/website/node_modules/next/dist/esm/client/image.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/felipe/develop/website/node_modules/next/dist/client/image.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/felipe/develop/website/node_modules/next/dist/esm/client/image.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/felipe/develop/website/node_modules/next/dist/client/image.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/felipe/develop/website/node_modules/next/dist/esm/client/image.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
   "/Users/felipe/develop/website/node_modules/next/dist/client/link.js": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
@@ -409,6 +484,13 @@ self.__RSC_MANIFEST={
     "name": "",
     "chunks": [
       "static/css/_app-client_src_components_Navbar_Navbar_module_css.css"
+    ]
+  },
+  "/Users/felipe/develop/website/src/components/HomeSection/HomeSection.module.css#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/_app-client_src_components_HomeSection_HomeSection_module_css.css"
     ]
   },
   "/Users/felipe/develop/website/src/app/page.module.css#": {

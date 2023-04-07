@@ -61,19 +61,18 @@ h6 {
   color: #34495E;
 }
 
-/* Navigation */
 nav {
-  background-color: #34495E;
+  background-color: var(--nav-background-color);
 }
 
 nav a {
-  color: #fff;
+  color: var(--nav-link-color);
   text-decoration: none;
   padding: 15px;
 }
 
 nav a:hover {
-  background-color: #1ABC9C;
+  background-color: var(--nav-link-hover-background-color);
 }
 
 /* Footer */

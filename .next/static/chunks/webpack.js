@@ -180,7 +180,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "33e7eddeb40f732b"; }
+/******/ 		__webpack_require__.h = function() { return "ddd4b8d6f015b3d0"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -786,7 +786,7 @@
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = function(chunkId, promises) {
-/******/ 			var cssChunks = {"_app-client_node_modules_next_font_google_target_css_path_src_app_page_js_import_Inter_argume-baa61f":1,"_app-client_src_components_Navbar_Navbar_module_css":1,"_app-client_src_app_page_module_css":1,"_app-client_src_app_globals_css":1,"_app-client_node_modules_bootstrap_dist_css_bootstrap_min_css":1};
+/******/ 			var cssChunks = {"_app-client_node_modules_next_font_google_target_css_path_src_app_page_js_import_Inter_argume-baa61f":1,"_app-client_src_components_Navbar_Navbar_module_css":1,"_app-client_src_components_HomeSection_HomeSection_module_css":1,"_app-client_src_app_page_module_css":1,"_app-client_src_app_globals_css":1,"_app-client_node_modules_bootstrap_dist_css_bootstrap_min_css":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(function() {
