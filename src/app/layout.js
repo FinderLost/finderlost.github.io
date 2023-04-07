@@ -1,6 +1,5 @@
 import Head from "next/head";
 import "./globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 export const metadata = {
