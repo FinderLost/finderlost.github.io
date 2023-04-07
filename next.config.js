@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
   },
-  exportPathMap: async function (defaultPathMap) {
-    return defaultPathMap;
-  }
 }
 
 module.exports = nextConfig
