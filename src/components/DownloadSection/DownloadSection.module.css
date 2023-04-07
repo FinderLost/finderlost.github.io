@@ -1,0 +1,5 @@
+#download {
+    background-color: var(--background);
+    color: var(--text-prominent);
+    padding: 3rem;
+  }

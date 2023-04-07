@@ -1,0 +1,24 @@
+/* FollowUsSection.module.css */
+
+.social-icons li a {
+  color: var(--primary-color);
+}
+
+.social-icons li a:hover {
+  color: var(--secondary-color);
+}
+
+.social-icons li a i {
+  font-size: 24px;
+}
+
+.social-icons li span {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}

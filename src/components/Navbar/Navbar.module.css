@@ -19,7 +19,6 @@
 
 .navbar-nav .nav-link {
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--font-color);
   margin: 0 1rem;
   cursor: pointer;
@@ -34,7 +33,6 @@
 
 .navbar span {
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--font-color);
   margin: 0 1rem;
   cursor: pointer;
