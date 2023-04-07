@@ -1,14 +1,17 @@
 import Head from "next/head";
-import "./globals.css";
+import Navbar from "../components/Navbar";
+import HomeSection from "../components/HomeSection";
+import KeyFeaturesSection from "../components/KeyFeaturesSection";
+import DownloadSection from "../components/DownloadSection";
+import Footer from "../components/Footer";
+import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.css";
 
-export const metadata = {
-  title: "Finder Lost",
-};
+const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang="en">
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +31,13 @@ export default function RootLayout({ children }) {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <body>{children}</body>
-    </html>
+      <main>
+        <Navbar />
+        <HomeSection />
+        <KeyFeaturesSection />
+        <DownloadSection />
+        <Footer />
+      </main>
+    </>
   );
 }
