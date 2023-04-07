@@ -6,7 +6,27 @@ body {
   padding-top: 40px;
 }
 
+p {
+  color: var(--text-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-prominent);
+}
+
 a {
+  color: inherit;
+  color: var(--text-base);
+  text-decoration: none;
+}
+
+a:focus {
+  color: var(--text-focused);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-hover);
   text-decoration: none;
 }
 
@@ -14,8 +34,24 @@ a {
   color: var(--text-prominent);
 }
 
+.text-inverse {
+  color: var(--text-inverse);
+}
+
 .text-base {
   color: var(--text-base);
+}
+
+.text-hover {
+  color: var(--text-hover);
+}
+
+.footer-light {
+  background-color: var(--stroke-variant);
+}
+
+.navbar-light {
+  background-color: var(--stroke-variant);
 }
 
 .navbar-light .navbar-nav .nav-link {

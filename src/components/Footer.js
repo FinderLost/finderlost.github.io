@@ -1,35 +1,78 @@
-import Link from 'next/link';
-
 const Footer = () => {
-    return (
-      <footer className="bg-light py-4">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <h4>About Us</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis sapien at commodo commodo.</p>
-            </div>
-            <div className="col-md-4">
-              <h4>Links</h4>
-              <ul className="list-unstyled">
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="#key-features">Features</Link></li>
-                <li><Link href="#download">Download</Link></li>
-                <li><Link href="#contact">Contact</Link></li>
-              </ul>
-            </div>
-            <div className="col-md-4">
-              <h4>Contact Us</h4>
-              <p>123 Main Street<br />Anytown, USA 12345<br />Phone: (123) 456-7890<br />Email: info@finderlost.com</p>
-            </div>
+  return (
+    <footer className="footer-light py-4">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4 mb-4 mb-md-0">
+            <h4>About Us</h4>
+            <p>
+              We are a company dedicated to reuniting people, pets, and personal
+              objects.
+            </p>
           </div>
-          <hr />
-          <p className="text-center">Copyright &copy; 2023
-            <a href="#">FinderLost</a> | All Rights Reserved</p>
+          <div className="col-md-4 mb-4 mb-md-0">
+            <h4>Contact Us</h4>
+            <ul className="list-unstyled">
+              <li>
+                <a href="mailto:info@finderlost.com">info@finderlost.com</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contact" className="col-md-4">
+            <h4>Follow Us</h4>
+            <ul className="list-unstyled d-flex">
+              <span className="mx-2 text-base">Coming soon!</span>
+              <li className="mx-2">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
+                  <i className="fab fa-facebook fa-lg"></i>
+                </a>
+              </li>
+              <li className="mx-2">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
+                  <i className="fab fa-twitter fa-lg"></i>
+                </a>
+              </li>
+              <li className="mx-2">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
+                  <i className="fab fa-instagram fa-lg"></i>
+                </a>
+              </li>
+              <li className="mx-2">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
+                  <i className="fab fa-linkedin fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
-  
+      </div>
+      <div className="container text-center">
+        <p className="text-base mb-0">
+          © 2023 FinderLost, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

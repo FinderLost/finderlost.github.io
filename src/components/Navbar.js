@@ -4,7 +4,7 @@ import logo from "../../public/images/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container d-flex align-items-center">
         <div className="d-flex align-items-center">
           <Link href="/">
@@ -16,7 +16,7 @@ const Navbar = () => {
               className="d-inline-block align-top"
             />
           </Link>
-          <span className="ml-2">Finder Lost</span>
+          <span className="ml-2 mx-2 text-base">Finder Lost</span>
         </div>
         <div className="navbar-nav mx-auto">
           <Link href="#home">
