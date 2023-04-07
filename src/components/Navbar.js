@@ -4,7 +4,7 @@ import logo from "../../public/images/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container d-flex align-items-center">
         <div className="d-flex align-items-center">
           <Link href="/">
@@ -19,18 +19,18 @@ const Navbar = () => {
           <span className="ml-2 mx-2 text-base">Finder Lost</span>
         </div>
         <div className="navbar-nav mx-auto">
-          <Link href="#home">
-            <span className="nav-link">Home</span>
-          </Link>
-          <Link href="#key-features">
-            <span className="nav-link">Features</span>
-          </Link>
-          <Link href="#apps">
-            <span className="nav-link">Apps</span>
-          </Link>
-          <Link href="#contact">
-            <span className="nav-link">Contact</span>
-          </Link>
+          <a href="#" className="nav-link">
+            Home
+          </a>
+          <a href="#key-features" className="nav-link">
+            Features
+          </a>
+          <a href="#apps" className="nav-link">
+            Apps
+          </a>
+          <a href="#contact" className="nav-link">
+            Contact
+          </a>
         </div>
       </div>
     </nav>

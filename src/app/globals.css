@@ -3,7 +3,6 @@
 
 body {
   background-color: var(--background);
-  padding-top: 40px;
 }
 
 p {
@@ -53,6 +52,12 @@ a:hover {
 
 .footer-light {
   background-color: var(--stroke-variant);
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0px;
 }
 
 .navbar-light {

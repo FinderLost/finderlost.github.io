@@ -10,7 +10,7 @@ const Footer = () => {
               objects.
             </p>
           </div>
-          <div className="col-md-4 mb-4 mb-md-0">
+          <div id="contact" className="col-md-4 mb-4 mb-md-0">
             <h4>Contact Us</h4>
             <ul className="list-unstyled">
               <li>
@@ -21,7 +21,9 @@ const Footer = () => {
           <div id="contact" className="col-md-4">
             <h4>Follow Us</h4>
             <ul className="list-unstyled d-flex">
-              <span className="mx-2 text-base">Coming soon!</span>
+              <li>
+              <i className="text-base">Coming soon!</i>
+              </li>
               <li className="mx-2">
                 <a
                   href="https://www.facebook.com/"
