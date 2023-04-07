@@ -46,6 +46,11 @@ a:hover {
   color: var(--text-hover);
 }
 
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .footer-light {
   background-color: var(--stroke-variant);
 }
