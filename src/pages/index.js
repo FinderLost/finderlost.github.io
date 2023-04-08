@@ -4,12 +4,28 @@ import HomeSection from "../components/HomeSection";
 import KeyFeaturesSection from "../components/KeyFeaturesSection";
 import DownloadSection from "../components/DownloadSection";
 import Footer from "../components/Footer";
-import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.css";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { isSupported } from "@firebase/analytics";
 
-const inter = Inter({ subsets: ["latin"] });
+const firebaseConfig = {
+  apiKey: "AIzaSyBfquMpKcVNcAFDEFp_zGMbqE5FmHEWQoY",
+  authDomain: "finderlost-65f3e.firebaseapp.com",
+  projectId: "finderlost-65f3e",
+  storageBucket: "finderlost-65f3e.appspot.com",
+  messagingSenderId: "968782545174",
+  appId: "1:968782545174:web:4947976f2c3690d29e5037",
+  measurementId: "G-8EWSNRC4GW",
+};
 
 export default function Home() {
+  const app = initializeApp(firebaseConfig);
+
+  if (typeof window !== "undefined" && isSupported()) {
+    const analytics = getAnalytics(app);
+  }
+
   return (
     <>
       <Head>

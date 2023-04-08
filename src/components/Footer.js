@@ -1,4 +1,15 @@
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { isSupported } from "@firebase/analytics";
+
 const Footer = () => {
+  const handleLinkClick = (event, eventName) => {
+    if (typeof window !== "undefined" && isSupported()) {
+      event.preventDefault();
+      const analytics = getAnalytics();
+      logEvent(analytics, eventName, { link: event.target.href });
+      window.location.href = event.target.href;  
+    }
+  };
   return (
     <footer className="footer footer-light">
       <div className="container">
@@ -14,7 +25,10 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="mailto:info@finderlost.com">info@finderlost.com</a>
+                <a 
+                href="mailto:info@finderlost.com"
+                onClick={(e) => handleLinkClick(e, "mailto_click")}
+                >info@finderlost.com</a>
               </li>
             </ul>
           </div>
@@ -30,6 +44,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark"
+                  onClick={(e) => handleLinkClick(e, "facebook_click")}
                 >
                   <i className="fab fa-facebook fa-lg"></i>
                 </a>
@@ -40,6 +55,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark"
+                  onClick={(e) => handleLinkClick(e, "twitter_click")}
                 >
                   <i className="fab fa-twitter fa-lg"></i>
                 </a>
@@ -50,6 +66,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark"
+                  onClick={(e) => handleLinkClick(e, "instagram_click")}
                 >
                   <i className="fab fa-instagram fa-lg"></i>
                 </a>
@@ -60,6 +77,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark"
+                  onClick={(e) => handleLinkClick(e, "linkedin_click")}
                 >
                   <i className="fab fa-linkedin fa-lg"></i>
                 </a>
